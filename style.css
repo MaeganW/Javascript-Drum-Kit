@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.keys {
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+
+    background-image: url('./img/freestocks-org-72560.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.key {
+    border: 3px solid black;
+    border-radius: .5rem;
+    height: 70px;
+    width: 60px;
+
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.07s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #FEF760;
+    box-shadow: 0 0 .8rem #FEF760;
+}
+
+kbd {
+    font-size: 22px;
+    color: #4DD9E5;
+}
+
+span {
+    color: #FEF760;
+}
