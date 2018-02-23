@@ -5,6 +5,7 @@ const http = require('http').Server(app);
 
 app.use('/img', express.static(path.join(__dirname + '/img')));
 app.use('/style.css', express.static(path.join(__dirname + '/style.css')));
+app.use('/sounds', express.static(path.join(__dirname + '/sounds')));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'));
